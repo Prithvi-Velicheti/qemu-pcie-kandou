@@ -26,24 +26,23 @@ In the current setup, we are performing experiments in the qemu ARM environment 
 
 
 ### i) Clone the repo. 
-    ```
-        $ git clone git@github.com:Prithvi-Velicheti/qemu-pcie-kandou.git 
-        $ cd qemu-pcie-kandou 
-    ```
+```
+    $ git clone git@github.com:Prithvi-Velicheti/qemu-pcie-kandou.git 
+    $ cd qemu-pcie-kandou 
+```
 ### ii) Download linux-kernel  
-    ```
-        $ wget https://ftp.riken.jp/Linux/kernel.org/linux/kernel/v6.x/linux-6.1.58.tar.xz 
-        $ tar xvf linux-6.1.58.tar.xz 
-        $ cd  linux-6.1.58
+```
+    $ wget https://ftp.riken.jp/Linux/kernel.org/linux/kernel/v6.x/linux-6.1.58.tar.xz 
+    $ tar xvf linux-6.1.58.tar.xz 
+    $ cd  linux-6.1.58
 
-    ```
+```
 ### iii) Configure and build linux kernel using the arm-gnu-toolchain provided. 
-    ```
+```
         $ make ARCH=arm CROSS_COMPILE=../arm-gnu-toolchain/bin/arm-none-linux-gnueabihf- defconfig 
         $ make ARCH=arm CROSS_COMPILE=../arm-gnu-toolchain/bin/arm-none-linux-gnueabihf- -j12  
-
-    ```
          
+```
           
 
 
