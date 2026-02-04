@@ -39,12 +39,25 @@ In the current setup, we are performing experiments in the qemu ARM environment 
 ```
 ### iii) Configure and build linux kernel using the arm-gnu-toolchain provided. 
 ```
-        $ make ARCH=arm CROSS_COMPILE=../arm-gnu-toolchain/bin/arm-none-linux-gnueabihf- defconfig 
-        $ make ARCH=arm CROSS_COMPILE=../arm-gnu-toolchain/bin/arm-none-linux-gnueabihf- -j12  
+    $ make ARCH=arm CROSS_COMPILE=../arm-gnu-toolchain/bin/arm-none-linux-gnueabihf- defconfig 
+    $ make ARCH=arm CROSS_COMPILE=../arm-gnu-toolchain/bin/arm-none-linux-gnueabihf- -j12  
+    $ cd ..
          
 ```
           
+### iv) Download  busybox. Busybox bundles essential linux commands. 
 
+```
+    $ wget https://busybox.net/downloads/busybox-1.36.1.tar.bz2
+    $ tar xvf  busybox-1.36.1.tar.bz2
+    $ cd busybox-1.36.1
 
+```
+### v) Configuring and building busybox.  
+
+```
+    $ make ARCH=arm CROSS_COMPILE=../arm-gnu-toolchain/bin/arm-none-linux-gnueabihf- defconfig
+
+```
  
 
