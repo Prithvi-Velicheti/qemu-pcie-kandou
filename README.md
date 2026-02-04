@@ -56,7 +56,7 @@ In the current setup, we are performing experiments in the qemu ARM environment 
 ### v) Configuring and building busybox.  
 
 ```
-    $ make ARCH=arm CROSS_COMPILE=../arm-gnu-toolchain/bin/arm-none-linux-gnueabihf- defconfig
+    $ make ARCH=arm CROSS_COMPILE=../arm-gnu-toolchain/bin/arm-none-linux-gnueabihf- defconfig   //start with default config. 
 
 ```
  
