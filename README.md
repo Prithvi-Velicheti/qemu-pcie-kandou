@@ -11,7 +11,19 @@ capability to do software development for Eiger3.
 
 ## Steps
 
-### Build busybox. 
+
+
+### i) Clone the repo. 
+    ```
+        $ git clone git@github.com:Prithvi-Velicheti/qemu-pcie-kandou.git 
+        $ cd qemu-pcie-kandou 
+    ```
+### ii) Download linux-kernel and build it with arm-gnu-toolchain provided. 
+    ```
+        $ wget  
+         
+          
+
 
  
 
